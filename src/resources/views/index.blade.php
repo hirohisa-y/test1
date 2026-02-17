@@ -14,7 +14,7 @@
   <header class="header">
     <div class="header__inner">
       <a class="header__logo" href="/">
-        Contact Form
+        FashionablyLate
       </a>
     </div>
   </header>
@@ -22,7 +22,7 @@
   <main>
     <div class="contact-form__content">
       <div class="contact-form__heading">
-        <h2>お問い合わせ</h2>
+        <h2>Contact</h2>
       </div>
       <form class="form" action="/contacts/confirm" method="post">
         @csrf
@@ -33,7 +33,33 @@
           </div>
           <div class="form__group-content">
             <div class="form__input--text">
-              <input type="text" name="name" placeholder="テスト太郎" />
+              <input type="text" name="name" placeholder="例 山田" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+          <div class="form__group-title">
+            <span class="form__label--item"></span>
+            <span class="form__label--required"></span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="text" name="name" placeholder="例 太郎" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">性別</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="text" name="gender" placeholder="" />
             </div>
             <div class="form__error">
               <!--バリデーション機能を実装したら記述します。-->
@@ -70,11 +96,53 @@
         </div>
         <div class="form__group">
           <div class="form__group-title">
+            <span class="form__label--item">住所</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="text" name="address" placeholder="例 東京都渋谷区千駄ヶ谷1-2-3"/>
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">建物名</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="text" name="building" placeholder="例 千駄ヶ谷マンション101" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
+            <span class="form__label--item">お問い合わせの種類</span>
+            <span class="form__label--required">必須</span>
+          </div>
+          <div class="form__group-content">
+            <div class="form__input--text">
+              <input type="" name="" />
+            </div>
+            <div class="form__error">
+              <!--バリデーション機能を実装したら記述します。-->
+            </div>
+          </div>
+        </div>
+        <div class="form__group">
+          <div class="form__group-title">
             <span class="form__label--item">お問い合わせ内容</span>
           </div>
           <div class="form__group-content">
             <div class="form__input--textarea">
-              <textarea name="content" placeholder="資料をいただきたいです"></textarea>
+              <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
             </div>
           </div>
         </div>
